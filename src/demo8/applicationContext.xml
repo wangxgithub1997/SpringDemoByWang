@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+      <!-- &lt;!&ndash;开启注解处理器&ndash;&gt;
+        <context:annotation-config></context:annotation-config>
+    <bean id="bookDao" class="demo8.BookDao"></bean>
+    <bean id="bookService" class="demo8.BookService"></bean>
+    <bean id="bookController" class="demo8.BookController"></bean>-->
+    <!--使用context命名空间，通知Spring扫描指定包下所有Bean类，进行注解解析-->
+    <context:component-scan base-package="demo8"></context:component-scan>
+</beans>
